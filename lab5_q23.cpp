@@ -1,21 +1,24 @@
-#include <iostream>
+#include<iostream>
+#include<string>
+// using namespace
 using namespace std;
-
-int main()
+// introduce the main function
+int main ()
 {
-    int n, reversedNumber = 0, remainder;
-
-    cout << "Enter an integer: ";
-    cin >> n;
-
-    while(n != 0)
-    {
-        remainder = n%10;
-        reversedNumber = reversedNumber*10 + remainder;
-        n /= 10;
-    }
-
-    cout << "Reversed Number = " << reversedNumber;
-
-    return 0;
+	cout<<"lets get started, we will be finding out to print all natural number from n to 0"<<endl;
+// declare the variable,	
+	int i,n;
+	cout<<"please enter the value of 'n' from which natural numbers upto 0 will be shown"<<endl;
+	cin>>n;
+	i=n;
+	
+	while ((i<=n)&&(i>=0))
+	{
+		if (i==n){cout<<"All natural numbers from "<<n<<" to 0 are listed below"<<endl;
+		}
+		cout<<i<<endl;
+		i=i-1;
+	}
+// return the main function
+return 0;
 }
